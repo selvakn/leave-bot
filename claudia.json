@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "leave_bot-executor",
+    "name": "leave_bot",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "9yjev2okyc",
+    "module": "bot"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "leave_bot",
+  "version": "1.0.0",
+  "private": true,
+  "main": "bot.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "claudia-bot-builder": "^2.2.0",
+    "googleapis": "^14.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-string": "^1.2.0",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  }
+}
