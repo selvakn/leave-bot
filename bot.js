@@ -2,7 +2,7 @@
 
 var botBuilder = require('claudia-bot-builder');
 var data = require('./data.js');
-var parser = require('parse_and_answer');
+var parser = require('./parse_and_answer.js');
 
 
 module.exports = botBuilder(function (request) {
