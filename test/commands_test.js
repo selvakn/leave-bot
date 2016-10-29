@@ -1,6 +1,7 @@
 var expect = require('chai').expect;
-var HerLeaves = require('../commands/commands.js').HerLeaves;
-var Help = require('../commands/commands.js').Help;
+var commands = require('../lib/commands/commands.js');
+var HerLeaves = commands.HerLeaves;
+var Help = commands.Help;
 
 describe('Commands', function () {
   describe('HerLeaves', function () {
@@ -29,6 +30,13 @@ describe('Commands', function () {
         ]);
 
         expect(answer).to.eq('Selva has 5.5 annual leaves and 2 optional leaves available!');
+      });
+
+      it('should handle invalid emp id', function () {
+        var answer = command.answer([
+        ]);
+
+        expect(answer).to.eq('Invalid emp id 12262');
       });
 
     });

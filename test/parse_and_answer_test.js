@@ -1,5 +1,5 @@
 var chai = require('chai');
-var parser = require('../parse_and_answer.js');
+var parser = require('../lib/parse_and_answer.js');
 var expect = chai.expect;
 
 chai.use(require('chai-string'));

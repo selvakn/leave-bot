@@ -2,19 +2,26 @@
   "name": "leave_bot",
   "version": "1.0.0",
   "private": true,
-  "main": "bot.js",
+  "main": "dist/bot.js",
   "license": "UNLICENSED",
   "dependencies": {
-    "bluebird": "^3.4.6",
     "claudia-bot-builder": "^2.2.0",
     "googleapis": "^14.1.0"
   },
   "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
     "chai": "^3.5.0",
     "chai-string": "^1.2.0",
-    "mocha": "^3.1.2"
+    "json-loader": "^0.5.3",
+    "mocha": "^3.1.2",
+    "webpack": "^1.12.8"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "node_modules/.bin/mocha",
+    "webpack": "node_modules/.bin/webpack"
   }
 }
