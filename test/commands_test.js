@@ -44,7 +44,7 @@ describe('Commands', function () {
 
 
   describe('MoreLeavesThanHer', function () {
-    var command = new MoreLeavesThanHer('Who have more leaves than 12262?');
+    var command = new MoreLeavesThanHer('Who has more leaves than 12262?');
 
     describe('#doesMatch', function () {
 
