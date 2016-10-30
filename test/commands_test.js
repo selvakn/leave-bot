@@ -62,7 +62,7 @@ describe('Commands', function () {
           ['12262', 'Selva', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '5.5', null, null, '2']
         ]);
 
-        expect(answer).to.eq('Vijay (12), Victor (8) have more leaves than Selva (7.5)');
+        expect(answer).to.eq('Vijay (12)\nVictor (8)\nhave more leaves than Selva (7.5)');
       });
 
       it('should the answer when no one has more leaves', function () {
@@ -97,11 +97,20 @@ describe('Commands', function () {
     describe('#answer', function () {
       it('should the answer from the matched result', function () {
         var answer = command.answer([
-          ['10300', 'Vijay', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '10', null, null, '2'],
-          ['12262', 'Selva', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '5.5', null, null, '2']
+          ['1', 'A', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1', null, null, '1'],
+          ['2', 'B', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '2', null, null, '1'],
+          ['3', 'C', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '3', null, null, '1'],
+          ['4', 'D', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '4', null, null, '1'],
+          ['5', 'E', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '5', null, null, '1'],
+          ['6', 'F', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '6', null, null, '1'],
+          ['7', 'G', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '7', null, null, '1'],
+          ['8', 'H', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '8', null, null, '1'],
+          ['9', 'I', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '9', null, null, '1'],
+          ['10', 'J', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '10', null, null, '1'],
+          ['11', 'K', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '11', null, null, '1'],
         ]);
 
-        expect(answer).to.eq('Vijay (12), Selva (7.5)');
+        expect(answer).to.eq('K (12)\nJ (11)\nI (10)\nH (9)\nG (8)\nF (7)\nE (6)\nD (5)\nC (4)\nB (3)');
       });
     });
   });
